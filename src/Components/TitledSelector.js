@@ -7,17 +7,17 @@ const Select = styled.select`
     -webkit-appearance: none !important; 
     appearance: none !important;
     outline: none;
-    border-radius: 0px;
-    border: solid #152842 1px;
-    background-color: #D9E2EF;
-    color: #666787;
+    border-radius: 16px;
+    border: solid #E2E8F0 1px;
+    background-color: #F8FAFC;
+    color: #152842;
     &:hover {
         background-color: #D9E2EFB8;
     }
 `;
 
 function TitledSelector({title, options}) {
-    const Title = title === undefined ? 
+    const Title = HTMLTableCaptionElement === undefined ? 
         (<div></div>) : 
         (<div>{title}</div>);
     return (
