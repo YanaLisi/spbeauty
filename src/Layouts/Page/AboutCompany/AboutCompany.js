@@ -3,9 +3,9 @@ import General from "./Components/General/General";
 import Addresses from "./Components/Addresses/Addresses";
 function AboutCompany() {
     return (
-        <div>
+        <div className="px-5 py-6">
             <Heading/> {/* Заголовок и кнопка справа */}
-            <div col ='d-flex flex-row justify-content-between'>
+            <div className="d-flex">
                 <General/>  {/* Основная информация вроде названия, типа и телефона */}
                 <Addresses/> {/* Список доступных адресов заведений */}
             </div>
